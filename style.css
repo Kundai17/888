@@ -1,211 +1,96 @@
-.links li a {
-    color: white; /* Set the text color to white */
- /* Remove underline from links */
+body
+{
+  font-family: display;
+  background-color: #FFAA33;
+    }
+
+header
+{
+background-color: #191970;
+  color: #D2042D;
+  padding: 20px;
+  text-align: center;
 }
 
-/* This will make only the "Get Started" link text white */
-#getstarted a {
-    color: black;
+nav
+{
+  background-color: #D2042D;
+  padding: 10px;
+  text-align: center;
 }
 
-
-body {
-  font-family: 'Open Sans', display;
-  background-color: black;
-}
-a {
+nav a
+{
+  color: #fff;
   text-decoration: none;
+  margin: 10px;
 }
 
-a:hover
+nav a:hover 
 {
   text-decoration: underline;
 }
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
 
-
-/* Start Landing Page */
-.landing-page header {
-  min-height: 80px;
-  display: flex;
-}
-
-  .landing-page header {
-    min-height: auto;
-    display: initial;
-  }
-
-.landing-page header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.landing-page header .logo {
-  color: white;
-  font-style: italic;
-  text-transform: uppercase;
-  font-size: 20px;
-}
-
-.landing-page header .links {
-  display: flex;
-  align-items: center;
-}
-
-.landing-page header .links li {
-  margin-left: 30px;
-  color: #ffc000;
-  cursor: pointer;
-  transition: .3s;
-}
-
-.landing-page header .links li:last-child {
-  border-radius: 20px;
-  padding: 10px 20px;
-  color: #FFF;
-  background-color: #ffc000;
-}
-
-.landing-page .content .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 140px;
-  min-height: calc(100vh - 80px);
-}
-
-.landing-page .content .info h1 {
-  color: #ffc000;
-  font-size: 44px;
-}
-.landing-page .content .info p {
-  font-family: quincy;
-  margin: 0;
-  line-height: 1.6;
-  font-size: 15px;
-  color: white;
-}
-.landing-page .content .info button {
-  border: 0;
-  border-radius: 20px;
-  padding: 12px 30px;
-  margin-top: 30px;
-  cursor: pointer;
-  color: black;
-  background-color: #ffc000;
-}
-.landing-page .content .image img {
-  max-width: 100%;
-}
-
-.landing-page footer
+section
 {
-  font-family: ;
-  background-color: #ffc000;
-  color: black;
+  padding: 20px;
+}
+
+footer
+{
+  background-color: #191970;
+  color: #D2042D;
   text-align: center;
-  padding: 2px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
 }
-/* End Landing Page */
-.rounded-social-buttons {
-  text-align: center;
+
+button
+{
+  border-radius: 12px;
+  background-color: #666;
 }
 
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
+input[type=text] 
+{
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.image-grid 
+{
+  dispaly: flex;
+  justify-content: space-between;
+  magin-top: 20px;
+}
+
+.image-grid img -
+{
+  width: 30%; /* Adjust the width as needed */
+  magin: 0;
   padding: 0;
-  text-decoration: none;
-  text-align: center;
-  color: #fefefe;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.rounded-social-buttons .fa-linkedin, .fa-tiktok, .fa-youtube, .fa-instagram {
-  font-size: 25px;
-}
-
-.rounded-social-buttons .social-button.linkedin {
-  background: #007bb5;
-}
-
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
-  color: #007bb5;
-  background: #fefefe;
-  border-color: #007bb5;
-}
-
-.rounded-social-buttons .social-button.tiktok {
-  background: #000000;
-}
-
-.rounded-social-buttons .social-button.tiktok:hover, .rounded-social-buttons .social-button.tiktok:focus {
-  color: #000000;
-  background: #fefefe;
-  border-color: #000000;
-}
-
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-
-.left{
-  text-align:left;
+.column {
   float: left;
-  
-  
+  width: 33.33%;
+  padding: 5px;
 }
 
-.right{
-  text-align: right;
-  float: right;
-  margin-right: 30px;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
 }
